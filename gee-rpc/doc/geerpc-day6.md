@@ -14,6 +14,8 @@ keywords:
 - 轮询调度
 image: post/geerpc/geerpc.jpg
 github: https://github.com/geektutu/7days-golang
+book: 七天用Go从零实现系列
+book_title: Day6 负载均衡
 ---
 
 ![golang RPC framework](geerpc/geerpc.jpg)
@@ -257,7 +259,7 @@ func (xc *XClient) Broadcast(ctx context.Context, serviceMethod string, args, re
 	ctx, cancel := context.WithCancel(ctx)
 	for _, rpcAddr := range servers {
 		wg.Add(1)
-		go func() {
+		go func(rpcAddr string) {
 			defer wg.Done()
 			var clonedReply interface{}
 			if reply != nil {
@@ -274,7 +276,7 @@ func (xc *XClient) Broadcast(ctx context.Context, serviceMethod string, args, re
 				replyDone = true
 			}
 			mu.Unlock()
-		}()
+		}(rpcAddr)
 	}
 	wg.Wait()
 	return e

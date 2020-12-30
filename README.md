@@ -1,4 +1,7 @@
-# 7 days golang apps from scratch
+# 7 days golang programs from scratch
+
+[![CodeSize](https://img.shields.io/github/languages/code-size/geektutu/7days-golang)](https://github.com/geektutu/7days-golang)
+[![LICENSE](https://img.shields.io/badge/license-MIT-green)](https://mit-license.org/)
 
 <details>
 <summary><strong>README 中文版本</strong></summary>
@@ -10,7 +13,9 @@
 
 推荐先阅读 **[Go 语言简明教程](https://geektutu.com/post/quick-golang.html)**，一篇文章了解Go的基本语法、并发编程，依赖管理等内容。
 
-另外推荐 **[Go 语言笔试面试题](https://geektutu.com/post/qa-golang.html)**，加深对 Go 语言的理解。
+推荐 **[Go 语言笔试面试题](https://geektutu.com/post/qa-golang.html)**，加深对 Go 语言的理解。
+
+推荐 **[Go 语言高性能编程](https://geektutu.com/post/high-performance-go.html)**([项目地址](https://github.com/geektutu/high-performance-go))，写出高性能的 Go 代码。
 
 期待关注我的「[知乎专栏](https://zhuanlan.zhihu.com/geekgo)」和「[微博](http://weibo.com/geektutu)」，查看最近的文章和动态。
 
@@ -78,7 +83,7 @@ GeeRPC 是基于 Go 语言标准库 `net/rpc` 实现的，添加了协议交换�
 </div>
 </details>
 
-What can I write in 7 days? A gin-like web framework? A distributed cache like groupcache? Or a simple Python interpreter? Hope this repo can give you the answer.
+What can be accomplished in 7 days? A gin-like web framework? A distributed cache like groupcache? Or a simple Python interpreter? Hope this repo can give you the answer.
 
 ## Web Framework - Gee
 
